@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Brand } from './brand';
 import { useAuth } from './auth-context';
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const apiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
 
 export function AuthScreen({ mode }: { mode: 'login' | 'signup' }) {
   const create = mode === 'signup';

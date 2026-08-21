@@ -20,7 +20,7 @@ export interface GuidanceResponseData {
 }
 
 export async function fetchGuidance(question: string): Promise<GuidanceResponseData> {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+  const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
   const response = await fetch(`${API_URL}/api/guidance`, {
     method: 'POST',
     headers: {

@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60 * 24
     frontend_url: str = "http://localhost:3000"
     cors_origins: list[str] = [
+        "https://lok-seva-ten.vercel.app",
         "http://localhost:3000",
         "http://localhost:3001",
         "http://127.0.0.1:3000",

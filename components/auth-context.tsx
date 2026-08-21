@@ -24,7 +24,7 @@ const AuthContext = createContext<AuthContextType>({
   logout: () => {},
 });
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const apiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);

@@ -13,7 +13,7 @@ export interface RTIResponseData {
 }
 
 export async function fetchRTIDraft(payload: RTIRequestPayload): Promise<RTIResponseData> {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+  const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
   try {
     const response = await fetch(`${API_URL}/api/rti`, {
       method: 'POST',
