@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Brand() { return <Link href="/" className="flex items-center gap-2.5" aria-label="LokSeva home"><span className="relative grid h-9 w-9 place-items-center rounded-xl bg-ink text-white"><i className="h-2 w-2 rounded-full bg-[#b8dac9]"/><i className="absolute h-3 w-3 border-b-2 border-l-2 border-white/80 rotate-45 translate-y-1"/></span><span className="text-lg font-extrabold tracking-[-.08em]">LOKSEVA</span></Link>; }

@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
+import type { ReactNode } from 'react';
+export function Button({ children, href, className = '', onClick, disabled }: { children: ReactNode; href?: string; className?: string; onClick?: () => void; disabled?: boolean }) { const c = `inline-flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue/20 disabled:opacity-50 disabled:pointer-events-none ${className}`; return href ? <Link href={href} onClick={onClick} className={c}>{children}<ArrowRight size={16}/></Link> : <button type="button" onClick={onClick} disabled={disabled} className={c}>{children}<ArrowRight size={16}/></button>; }
+export function Badge({ children, tone='sage' }: {children:ReactNode; tone?:'sage'|'amber'}) { return <span className={`rounded-full px-2.5 py-1 text-[11px] font-bold ${tone==='sage'?'bg-sage/10 text-sage':'bg-amber/10 text-amber'}`}>{children}</span>; }

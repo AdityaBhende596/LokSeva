@@ -1,0 +1,1 @@
+export function GuidanceSkeleton(){return <div className="animate-pulse space-y-4" aria-label="Loading guidance"><div className="h-24 rounded-2xl bg-line/60"/><div className="h-48 rounded-2xl bg-line/60"/><div className="h-24 rounded-2xl bg-line/60"/></div>}
