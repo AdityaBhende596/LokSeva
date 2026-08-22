@@ -10,10 +10,9 @@
 
 ---
 
-## 📌 Submission Links & Demo Video
+## 📌 Submission Links
 
 - **🌐 Live Web Application**: [https://lok-seva-ten.vercel.app](https://lok-seva-ten.vercel.app)
-- **📹 Demo Video**: [Watch LokSeva Demo Video (YouTube / Loom)](#) *(Placeholder: Replace with your video link)*
 - **💻 GitHub Repository**: [https://github.com/AdityaBhende596/LokSeva](https://github.com/AdityaBhende596/LokSeva)
 - **⚡ Production API Base**: [https://lokseva-37mx.onrender.com](https://lokseva-37mx.onrender.com)
 - **📖 Interactive API Documentation**: [https://lokseva-37mx.onrender.com/docs](https://lokseva-37mx.onrender.com/docs)
@@ -287,6 +286,5 @@ LokSeva is an informational civic guidance prototype created for hackathon demon
 - **Project Name**: LokSeva
 - **Submission Phase**: LokSeva Phase 1 Hackathon Submission
 - **Live Application URL**: [https://lok-seva-ten.vercel.app](https://lok-seva-ten.vercel.app)
-- **Demo Video Link**: [Watch LokSeva Demo Video](#) *(Placeholder: Replace with your video URL)*
 - **Backend API Docs**: [https://lokseva-37mx.onrender.com/docs](https://lokseva-37mx.onrender.com/docs)
 - **Codebase Repository**: [https://github.com/AdityaBhende596/LokSeva](https://github.com/AdityaBhende596/LokSeva)
